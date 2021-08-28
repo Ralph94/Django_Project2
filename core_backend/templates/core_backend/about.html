@@ -1,0 +1,27 @@
+{% extends "core_backend/base.html" %}
+{% load static %}
+{% block content %}
+{% for post in posts %} 
+  <article style="font-family: 'Fira Sans Condensed', sans-serif;">
+  <div class="media-body">
+      <h1><a class="article-title" href="#" style="color: #000100; font-family: 'Merriweather', serif; font-size: 20px;">{{ post.title }}</a></h1>
+      <a class="mr-2" href="https://www.questdiagnostics.com/home/" style="font-size: 20px;">{{ post.text }}</a> 
+      
+      <div>
+      <img src="{% static 'images/Quest_bg.PNG' %}"> 
+      </div>
+      
+  </div>
+  </article>      
+
+
+{% endfor %}
+{% endblock content %}
+
+
+
+
+
+
+
+    

@@ -1,0 +1,23 @@
+{% extends "core_backend/base.html" %}
+
+{% block content %}
+
+<article class="media content-section" style="font-family: 'Fira Sans Condensed', sans-serif;">
+    <img class="rounded-circle article-img" src="{{ object.courier.profile.image.url }}">
+    <div class="media-body">
+    <div class="article-metadata">
+    <h1><a class="article-title" href="#" style="color: #000100; font-family: 'Merriweather', serif; font-size: 10px;">{{ object.courier }}</a></h1>
+        <a class="mr-2" href="#" style="font-size: 20px;">{{ object.location }}</a>
+        
+    </div>
+    <h2 class="artical-title" >{{ object.address }}</h2>
+    <p class="article-content">{{ object.suite }}</p>
+    <p class="article-content">{{ object.account_number }}</p>
+    <p class="article-content">{{ object.date_posted }}</p>
+    <p class="article-content">{{ object.note }}</p>
+    </div>
+</article>
+
+{% endblock content %}
+
+

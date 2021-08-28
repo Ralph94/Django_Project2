@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'core_backend/login_page.css' %}">
+<body style="display: block; margin-left: auto; margin-right: auto; background-image: url({% static 'images/login.jpg' %});">
+
+<h2>Log In</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+</form>
+</body>

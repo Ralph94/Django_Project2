@@ -1,0 +1,30 @@
+{% extends "core_backend/base.html" %}
+
+{% block content %}
+{% for post in posts %}
+    <article class="media content-section" style="font-family: 'Fira Sans Condensed', sans-serif;">
+    <img class="rounded-circle article-img" 
+    src="{{ post.courier.profile.image.url }}"><a href="{% url 'post_update' post.id %}"><i class="fa fa-pencil" aria-hidden="true" style="transform: translateX(400px); font-size: 20px;">
+    </i></a><a href="{% url 'post_confirm_delete' post.id %}"><i class="fa fa-trash" aria-hidden="true" style="transform: translateX(410px); font-size: 20px; color: #FF0000;"></i></a>
+    <a href="{% url 'post_new'%}"><i class="far fa-plus-square" style='font-size: 20px';></i></a>
+    
+    <div class="media-body">
+    <div class="article-metadata">
+    <h1><a class="article-title" href="#" style="color: #000100; font-family: 'Merriweather', serif; font-size: 10px;">{{ post.courier }}</a></h1>
+      <a class="mr-2" href="#" style="font-size: 20px;">{{ post.location }}</a>
+      
+    </div>
+    <h2><a class="article-title" href="{% url 'post_detail' post.id %}">{{ post.address }}</a></h2>
+    <p class="article-content">{{ post.suite }}</p>
+    <p class="article-content">{{ post.account_number }}</p>
+    <p class="article-content">{{ post.date_posted }}</p>
+    <p class="article-content">{{ post.note }}</p>
+  </div>
+</article>
+
+{% endfor %}
+{% endblock content %}
+
+
+
+
