@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    background-color: gray;
+    color: #000100;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #4A7637;
+}
+
+
+
+button{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    font-weight: bold;
+    color: #B9C930;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 2px;
+    margin: 20px;
+    transition: 0.5s;
+    font-size: 30px;
+    background: url('../images/logoutbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #4A7637;
+}
+
+button:hover{
+    background: #4A7637 url('../images/logoutbg.png');
+    transition-delay: 0.8s;
+    background-size: 180px;
+    animation: Animate 0.8s steps(8) forwards;
+    
+}
+
+@keyframes Animate{
+    0%{
+        background-position-y: 0;
+    }
+    100%{
+        background-position-y: -480px;
+    }
+}
+
+
+
+a.btn.btn-primary{
+    position: absolute;
+    width: 300px;
+    height: 130px;
+    font-weight: bold;
+    color: #B9C930;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 2px;
+    margin: 20px;
+    transition: 0.5s;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    right: auto;
+    bottom: auto;
+    left: 36%;
+    top: 30%;
+    background-color: #000100;
+
+    
+}
+a.btn.btn-primary:hover{
+    background: #000100 url('../images/pixel5.png');
+    transition-delay: 0.8s;
+    background-size: 180px;
+    animation: Animate 0.8s steps(8) forwards;
+    
+}
+
+
+@keyframes Animate{
+    0%{
+        background-position-y: 0;
+    }
+    100%{
+        background-position-y: -380px;  /*-480px*/
+    }
+}

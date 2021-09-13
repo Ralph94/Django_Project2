@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'core_backend/logout_page.css' %}">
+<body style="display: block; margin-left: auto; margin-right: auto; background-image: url({% static 'images/logoutbg.png' %});">
+
+<h2>You Logged Out The Scanner!</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <a href="http://127.0.0.1:8000/" class="btn btn-primary">Log Back Into Scanner</a>
+</form>
+</body>

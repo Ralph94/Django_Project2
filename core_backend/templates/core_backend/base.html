@@ -76,13 +76,13 @@
         <h3>Our Sidebar</h3>
         <p class='text-muted'>You can put any information here you'd like.
           <ul class="list-group">
-            <li class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Add Stop</li>
-            <li class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Announcements</li>
-            <li class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Calendars</li>
-            <li class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;" href="#">Delete Stop</li>
-            <a href="{% url 'logout' %}" class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Exit Account</a>
-            <a href="{% url 'register' %}" class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Enroll Agent</a>
-            <a href="http://127.0.0.1:8000/admin/" class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Admin information</a>   
+             <a  href="{% url 'post_new' %}" class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Add Stop <i class="fas fa-thumbs-up"></i></a>
+            <li class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;" href="#">Delete Stop <i class="fas fa-thumbs-down"></i></li>
+            <a href="{% url 'logout' %}" class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Exit Account <i class="fas fa-door-open"></i></a>
+            <a href="{% url 'register' %}" class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Enroll Agent <i class="fas fa-user-secret"></i></a>
+            <a href="http://127.0.0.1:8000/admin/" class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Admin information <i class="fas fa-info-circle"></i></a>  
+            <a  href="{% url 'logout_page' %}" class="list-group-item list-group-item-light" style="color: #000100; font-family: 'Merriweather', serif;">Exit Outta Of System <i class="fas fa-sign-out-alt"></i></a>
+           
                    
           </ul>
         </p>

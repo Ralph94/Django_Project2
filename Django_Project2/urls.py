@@ -26,6 +26,8 @@ urlpatterns = [
     path('profile/', user_views.profile, name='profile'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html') , name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html') , name='logout'),
+    path('login_page/', auth_views.LoginView.as_view(template_name='users/login_page.html') , name='login_page'),
+    path('logout_page/', auth_views.LogoutView.as_view(template_name='users/logout_page.html') , name='logout_page'),
     path('', include('core_backend.urls')),
 ]
 

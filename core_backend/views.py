@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import Post, About_Post
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, LogoutView
 
 
 posts = [
@@ -34,7 +34,11 @@ def home(request):
     return render (request, 'core_backend/home.html', context)
 
 class PostLoginView(LoginView):
-    template_name = 'core_backend/login_page.html'
+    template_name = 'core_backend/login_page.html' # Our Login View 
+
+
+class PostLogoutView(LogoutView):
+    template_name = 'core_backend/logout_page.html'  # Our Logout View
     
 
 

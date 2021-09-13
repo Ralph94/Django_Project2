@@ -5,7 +5,7 @@
     <article class="media content-section" style="font-family: 'Fira Sans Condensed', sans-serif;">
     <img class="rounded-circle article-img" 
     src="{{ post.courier.profile.image.url }}"><a href="{% url 'post_update' post.id %}"><i class="fa fa-pencil" aria-hidden="true" style="transform: translateX(400px); font-size: 20px;">
-    </i></a><a href="{% url 'post_confirm_delete' post.id %}"><i class="fa fa-trash" aria-hidden="true" style="transform: translateX(410px); font-size: 20px; color: #FF0000;"></i></a>
+    </i><a href="{% url 'post_confirm_delete' post.id %}"><i class="fa fa-trash" aria-hidden="true" style="transform: translateX(410px); font-size: 20px; color: #FF0000;"></i></a>
     <a href="{% url 'post_new'%}"><i class="far fa-plus-square" style='font-size: 20px';></i></a>
     
     <div class="media-body">
